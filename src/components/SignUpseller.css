@@ -1,0 +1,97 @@
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(255, 255, 255);
+     /* background-image: url('imgs/6600674_3334896.jpg');  */
+
+}
+
+.maindiv{
+    border: 1px solid rgb(183, 177, 177);
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #140202;
+    background-color: white;
+}
+
+.maindiv .mainform .lb-box{
+    margin: 30px auto;
+}
+
+.maindiv .mainform .lb-box input,select,button{
+    border: 2px solid grey;
+}
+
+
+
+.maindiv .mainform .name{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+.maindiv .mainform .name .f-name{
+    width: 48%;
+}
+.maindiv .mainform .name .f-name .f-name-input{
+    width: 90%;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.maindiv .mainform .name .l-name{
+    width: 48%;
+}
+.maindiv .mainform .name .l-name .l-name-input{
+    width: 90%;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.maindiv .mainform .emailclass{
+    text-align: center;
+}
+.maindiv .mainform .lb-box .emailinput{
+    width: 95%;
+    border-radius: 8px;
+    padding: 10px;
+}
+ 
+.maindiv .mainform .passclass{
+    text-align: center;
+}
+.maindiv .mainform .lb-box .passinput{
+    width: 95%;
+    border-radius: 8px;
+    padding: 10px;
+    
+}
+
+.maindiv .mainform .countryclass{
+    text-align: center;
+}
+
+.maindiv .mainform .lb-box #country{
+    width: 98%;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+
+.maindiv .mainform .lb-box .submit{
+    width : 100%;
+    border-radius: 8px;
+    padding: 8px;
+    background-color:rgb(15, 191, 197) ;
+} 
+ 
+
+ 

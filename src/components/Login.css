@@ -1,0 +1,33 @@
+.mainlogin .outerdiv{
+    margin: 0 auto;
+    max-width: 500px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: 10%;
+    height: 300px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 7px 7px 7px grey;
+}
+
+
+.mainlogin .outerdiv .login .ep{
+    margin: 30px;
+}
+
+.mainlogin .outerdiv .login .ep input{
+    border: 1px solid grey;
+    border-radius: 8px;
+    padding: 7px;
+    width: 80%
+}
+
+button{
+    background-color: rgb(47, 184, 189);
+    border: 1px solid  grey;
+    border-radius: 25px;
+    width: 50%;
+    padding:5px ;
+}
+
