@@ -46,7 +46,7 @@ export default function SignUpseller(props){
             <div className="lb-box cbox">
                 <input type="checkbox"/>
                 <label for="terms">
-                    {props.terms}
+                    I accept the terms and conditions
                 </label>
             </div>
             <div className="lb-box createbutton">
