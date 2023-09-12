@@ -8,7 +8,7 @@ export default function Mainbuyer () {
         <div className="buyeroptions">
             <div className="bidoptions">
                 <ul className="bids">
-                    <li className="create"> <Link to="/Bidcreate"  > Create Bid </Link> </li>
+                    <li className="create"> <Link to="/Bidcreatebybuyer"  > Create Bid </Link> </li>
                     <li className="manage">Manage Bids</li>
                     <li className="older"> View old Bids </li>
                 </ul>

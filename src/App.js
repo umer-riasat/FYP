@@ -6,7 +6,7 @@ import Home from './components/Home';
 import Signupoption from './components/Signupoption';
 import Login from './components/Login';
 import Mainbuyer from './components/Mainbuyer';
-import Bidcreate from './components/Bidcreate';
+import Bidcreatebybuyer from './components/Bidcreatebybuyer';
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
           <Route path="signUpOption" element={<Signupoption />} />
           <Route path="Login" element={<Login />} />
           <Route path="Mainbuyer" element={<Mainbuyer />} />
-          <Route path="Bidcreate" element={<Bidcreate/>} /> 
+          <Route path="Bidcreatebybuyer" element={<Bidcreatebybuyer />} /> 
      </Route>
 
        </Routes>

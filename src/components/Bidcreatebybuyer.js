@@ -1,8 +1,7 @@
 import React from 'react'
-import './Bidcreate.css'
+import './Bidcreatebybuyer.css'
 
-export default function 
-() {
+export default function Bidcreatebybuyer () {
   return (
     <div className='bidcreation'>
 
