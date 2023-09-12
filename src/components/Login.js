@@ -21,7 +21,10 @@ export default function Login() {
                 </div>
                 <div className="buton">
                     <button>
-                        <Link to="/Mainbuyer" > Login</Link>
+                        <Link to="/Mainbuyer" > Login Buyer</Link>
+                    </button>
+                    <button>
+                        <Link to="/Mainseller" > Login seller</Link>
                     </button>
                 </div>
             </form>

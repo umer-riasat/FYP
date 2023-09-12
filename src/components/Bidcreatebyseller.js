@@ -1,11 +1,11 @@
 import React from 'react'
-import './Bidcreatebybuyer.css'
+import './Bidcreatebyseller.css'
 
-export default function Bidcreatebybuyer () {
+export default function Bidcreatebyseller () {
   return (
     <div className='bidcreation'>
         <h2 className="heading">
-            Create Bid for Seller
+            Create Bid for Transporter
         </h2>
 
           <form className="bidForm" action="" >
@@ -21,9 +21,9 @@ export default function Bidcreatebybuyer () {
 
                 <label for="category"></label>
                         <select className="category require" name="category" required >
-                                <option value="electronics">Electronics</option>
-                                <option value="clothing">Clothing</option>
-                                <option value="furniture">Furniture</option>
+                                <option value="electronics">Cotton</option>
+                                <option value="clothing">Rice</option>
+                                <option value="furniture">Wheat</option>
                         </select>
 
                 <label for="price"></label>

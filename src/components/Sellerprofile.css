@@ -1,0 +1,83 @@
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Page layout */
+header {
+    background-color:  #dee2e6;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Seller info */
+.seller-info img {
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+.seller-info h1 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+/* Product list */
+.product-list {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.product-list h2 {
+    font-size: 20px;
+}
+
+.product-list form {
+    margin-top: 10px;
+}
+
+.product-list label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.product-list input[type="text"] {
+    width: 80%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Seller stats */
+.seller-stats {
+    flex: 1;
+}
+
+.seller-stats h2 {
+    font-size: 20px;
+}
+
+.seller-stats form {
+    margin-top: 10px;
+}
+
+.seller-stats label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.seller-stats input[type="text"] {
+    width: 80%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #f9f9f9;
+}

@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #dee2e6;
+    background-color: #a5b3c0;
     color: #000000;
     padding: 10px 20px;
 }
@@ -33,9 +33,4 @@
     text-decoration: none;
     color: #fff;
     font-weight: bold;
-}
-
-.chek{
-    color: red;
-    background-color: black;
 }
