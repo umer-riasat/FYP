@@ -14,6 +14,7 @@ export default function Mainbuyer () {
                     <li className="create"> <Link to="/Bidcreatebybuyer"  > Create Bid </Link> </li>
                     <li className="manage"><Link to="/Buyerprofile"  > Manage Profile </Link></li>
                     <li className="older"> <Link to="/Buyerprebids"  > Previous Bids </Link> </li>
+                    <li className="older"> <Link to="/Managebidbuyer"  > Manage Bid </Link> </li>
                 </ul>
             </div>
         </div>

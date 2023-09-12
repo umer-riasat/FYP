@@ -42,12 +42,12 @@
     font-size: 16px;
   }
   
-  select {
+  .bidcreation .bidForm .bidreq select {
     height: 40px;
   }
   
   /* Style the submit button */
-  input[type="submit"] {
+  .bidcreation .bidForm .bidreq input[type="submit"] {
     background-color: #007bff;
     color: white;
     padding: 10px 20px;
@@ -58,6 +58,6 @@
   }
   
   /* Style the submit button on hover */
-  input[type="submit"]:hover {
+  .bidcreation .bidForm .bidreq input[type="submit"]:hover {
     background-color: #0056b3;
   }

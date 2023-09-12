@@ -13,11 +13,13 @@ import Sellerprofile from './components/Sellerprofile';
 import Buyerprofile from './components/Buyerprofile';
 import Viewbids from './components/Viewbids';
 import Buyerprebids from './components/Buyerprebids';
+import Calculatefeas from './components/Calculatefeas';
+import Managebidbuyer from './components/Managebidbuyer';
 
 function App() {
   return (
     <>
-    <BrowserRouter>
+    {/* <BrowserRouter>
     <Routes>
     <Route path = "/" element={<NavBar />} >
           <Route index element={<Home />} />
@@ -32,9 +34,11 @@ function App() {
           <Route path="Buyerprofile" element={<Buyerprofile />}/>
           <Route path="Viewbids" element={<Viewbids />}/>
           <Route path="Buyerprebids" element={<Buyerprebids />}/>
+          <Route path="Managebidbuyer" element={<Managebidbuyer />}/>
      </Route>
        </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
+      <Calculatefeas></Calculatefeas>
       </>
   )
 }

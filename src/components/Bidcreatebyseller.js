@@ -3,7 +3,7 @@ import './Bidcreatebyseller.css'
 
 export default function Bidcreatebyseller () {
   return (
-    <div className='bidcreation'>
+    <div className='bidcreations'>
         <h2 className="heading">
             Create Bid for Transporter
         </h2>
