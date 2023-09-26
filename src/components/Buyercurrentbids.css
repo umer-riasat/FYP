@@ -1,0 +1,71 @@
+body{
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.buyercurrentbids .viewbids{
+    text-align: center;
+    margin-top: 5%;
+    font-family: 'Mirza', serif;
+}
+
+
+.buyercurrentbids .tablediv{
+    margin-top: 5%;
+}
+
+.buyercurrentbids .tablediv table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.buyercurrentbids .tablediv table td {
+    background-color: rgb(206, 202, 202);
+    color: #0c2943;
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.buyercurrentbids .tablediv table td .editbuton {
+    
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 5px;
+}
+
+.buyercurrentbids .tablediv table td .editbuton a{
+    margin: 0 auto; 
+}
+
+.buyercurrentbids .tablediv table td .editbuton button{
+    background-color: #0c2943;
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding: 8px;
+    width: 100px;
+     margin: 0 auto; 
+}
+
+.buyercurrentbids .tablediv table td .editbuton button:hover{
+    background-color: white;
+    color: #0c2943;
+}
+
+.buyercurrentbids .tablediv table th {
+    background-color: #0c2943;
+    color: white;
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.buyercurrentbids .tablediv table tr:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+}

@@ -4,9 +4,9 @@ import './Bidcreatebybuyer.css'
 export default function Bidcreatebybuyer () {
   return (
     <div className='bidcreation'>
-        <h2 className="heading">
+        <h1 className="heading">
             Create Bid for Seller
-        </h2>
+        </h1>
 
           <form className="bidForm" action="" >
             <div className="bidreq">

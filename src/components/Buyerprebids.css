@@ -5,32 +5,40 @@ body{
 
 }
 
-.viewbids{
+.buyerprebids .viewbids{
     text-align: center;
     margin-top: 5%;
+    font-family: 'Mirza', serif;
 }
 
 
-.viewbids .tablediv{
+.buyerprebids .tablediv{
     margin-top: 5%;
 }
-table {
+
+.buyerprebids .tablediv table {
     border-collapse: collapse;
     width: 80%;
     margin: 20px auto;
 }
 
-th, td {
+.buyerprebids .tablediv table td {
+    background-color: rgb(206, 202, 202);
+    color: #0c2943;
     border: 1px solid #ccc;
     padding: 8px;
     text-align: left;
 }
 
-th {
-    background-color: #f2f2f2;
+.buyerprebids .tablediv table th {
+    background-color: #0c2943;
+    color: white;
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
 }
 
-tr:hover {
+.buyerprebids .tablediv table tr:hover {
     background-color: #f5f5f5;
     cursor: pointer;
 }

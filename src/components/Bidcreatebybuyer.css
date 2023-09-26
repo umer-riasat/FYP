@@ -5,8 +5,9 @@
 
   .bidcreation .heading{
     padding: 50px;
-    margin-top: 2%;
+    margin-top: 1%;
     text-align: center;
+    font-family: 'Mirza', serif;
   }
   
   /* Style the form */
@@ -15,7 +16,7 @@
     margin: 0 auto;
     border: 1px solid #ccc;
     padding: 50px;
-    margin-top: 5%;
+    margin-top: 1%;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
@@ -48,7 +49,7 @@
   
   /* Style the submit button */
   .bidcreation .bidForm .bidreq input[type="submit"] {
-    background-color: #007bff;
+    background-color: #0c2943;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -59,5 +60,6 @@
   
   /* Style the submit button on hover */
   .bidcreation .bidForm .bidreq input[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: white;
+    color: #0c2943;
   }

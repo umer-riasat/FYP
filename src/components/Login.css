@@ -4,8 +4,8 @@
     border: 1px solid grey;
     border-radius: 20px;
     padding: 30px;
-    margin-top: 10%;
-    height: 300px;
+    margin-top: 5%;
+    height: 500px;
     text-align: center;
     background-color: white;
     box-shadow: 7px 7px 7px grey;
@@ -31,11 +31,49 @@
     gap: 15px;
 }
 
-button{
-    background-color: rgb(47, 184, 189);
+.mainlogin .outerdiv .login .buton a{
+    width: 50%;
+
+}
+
+.mainlogin .outerdiv .login .buton a button{
+    background-color:#0c2943;
+    color:white;
     border: 1px solid  grey;
     border-radius: 25px;
-    width: 50%;
+    width: 80%;
     padding:5px ;
 }
 
+.mainlogin .outerdiv .login .buton a button:hover{
+    background-color:white;
+    color:#0c2943;
+    transition: ease-in-out .2s;
+    
+}
+
+
+.mainlogin .outerdiv .login .footer{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 15%;
+}
+
+.mainlogin .outerdiv .login .footer .signbuton{
+    margin-top: 5%;
+}
+
+.mainlogin .outerdiv .login .footer .signbuton button{
+    background-color:#0c2943;
+    color:white;
+    border: 1px solid  grey;
+    border-radius: 25px;
+    width: 30%;
+    padding:5px ;
+}
+
+.mainlogin .outerdiv .login .footer .signbuton button:hover{
+    background-color:white;
+    color:#0c2943;
+    transition: ease-in-out .2s;
+}

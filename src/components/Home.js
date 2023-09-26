@@ -1,5 +1,6 @@
 import React from "react";
 import  './Home.css';
+import { Link } from 'react-router-dom'
 
 export default function Home() {
   return (
@@ -21,9 +22,16 @@ export default function Home() {
           </h6>
           <div className="trustimg">
             <a href="/" className="logos">
-              <img src="https://upload.wikimedia.org/wikipedia/en/e/e4/National_University_of_Computer_and_Emerging_Sciences_logo.png" alt="" />
+              <img src="https://upload.wikimedia.org/wikipedia/en/e/e4/National_University_of_Computer_and_Emerging_Sciences_logo.png"  alt="" />
             </a>
           </div>
+          </div>
+          <div className="signup">
+            <Link to="/Signupseller" className="signupbuton">
+              <button>
+                Get started!
+              </button>
+            </Link>
           </div>
         </div>
       </div>

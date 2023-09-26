@@ -20,12 +20,34 @@ export default function Login() {
                     <input placeholder='Password' type="text" className="values" />
                 </div>
                 <div className="buton">
-                    <button>
-                        <Link to="/Mainbuyer" > Login Buyer</Link>
-                    </button>
-                    <button>
-                        <Link to="/Mainseller" > Login seller</Link>
-                    </button>
+                        <Link to="/Mainbuyer" >
+                            <button>
+                                Login Buyer
+                            </button>
+                        </Link>
+                        <Link to="/Maintransporter" >
+                            <button>
+                                Login Transporter
+                            </button>
+                        </Link>
+                    
+                        <Link to="/Mainseller" > 
+                            <button>
+                                Login seller
+                            </button>
+                        </Link>
+                </div>
+                <div className="footer">
+                    <p className="foothead">
+                        ------Don't have an Acount.------
+                    </p>
+                    <div className="signbuton">
+                        <Link to="/Signupoption"> 
+                            <button >
+                                Sign Up
+                            </button>
+                        </Link>
+                    </div>
                 </div>
             </form>
         </div>

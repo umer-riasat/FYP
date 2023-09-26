@@ -4,13 +4,13 @@ import "./Buyerprofile.css"
 export default function 
 () {
   return (
-    <div>
+    <div className='buyerprofile'>  
         <header>
         <div class="buyer-info">
             <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=
             M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww&w=1000&q=80" alt=""/>
-            <h1>Buyer Name</h1>
-            <p>Buyer Address</p>
+            <h6>Buyer Name</h6>
+            <h6>Buyer Id</h6>
         </div>
     </header>
     <main>

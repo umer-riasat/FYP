@@ -1,11 +1,11 @@
 import React from 'react'
-import "./Managebidbuyer.css"
+import "./Editbid.css"
 
-export default function Managebidbuyer() {
+export default function Editbid() {
   return (
     <div className="managebid">
     <h2 className="heading">
-        Manage Bid
+        Edit Bid
     </h2>
 
       <form className="bidForm" action="" >

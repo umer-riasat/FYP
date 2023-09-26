@@ -3,9 +3,8 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     background-color: rgb(255, 255, 255);
-     /* background-image: url('imgs/6600674_3334896.jpg');  */
 
 }
 
@@ -90,7 +89,13 @@ body{
     width : 100%;
     border-radius: 8px;
     padding: 8px;
-    background-color:rgb(15, 191, 197) ;
+    background-color:#0c2943 ;
+    color:white;
+} 
+
+.maindiv .mainform .lb-box .submit:hover{
+    background-color:white ;
+    color:#0c2943;
 } 
  
 

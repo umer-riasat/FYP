@@ -14,16 +14,23 @@ import Buyerprofile from './components/Buyerprofile';
 import Viewbids from './components/Viewbids';
 import Buyerprebids from './components/Buyerprebids';
 import Calculatefeas from './components/Calculatefeas';
-import Managebidbuyer from './components/Managebidbuyer';
+import Editbid from './components/Editbid';
+import Footer from './components/Footer';
+import Buyercurrentbids from './components/Buyercurrentbids';
+import Sellercurrentbids from './components/Sellercurrentbids';
+import Maintransporter from './components/Maintransporter';
+import Transporterprofile from './components/Transporterprofile';
+import Biddetails from './components/Biddetails';
+import Aboutus from './components/Aboutus';
 
 function App() {
   return (
     <>
-    {/* <BrowserRouter>
+    <BrowserRouter>
     <Routes>
     <Route path = "/" element={<NavBar />} >
           <Route index element={<Home />} />
-          <Route path="signUpSeller" element={<SignUpseller signas="Register as Seller" />} />
+          <Route path="signUpSeller" element={<SignUpseller signas="Sign Up" />} />
           <Route path="signUpOption" element={<Signupoption />} />
           <Route path="Login" element={<Login />} />
           <Route path="Mainbuyer" element={<Mainbuyer />} />
@@ -34,11 +41,23 @@ function App() {
           <Route path="Buyerprofile" element={<Buyerprofile />}/>
           <Route path="Viewbids" element={<Viewbids />}/>
           <Route path="Buyerprebids" element={<Buyerprebids />}/>
-          <Route path="Managebidbuyer" element={<Managebidbuyer />}/>
+          <Route path="Editbid" element={<Editbid />}/>
+          <Route path="Buyercurrentbids" element={<Buyercurrentbids />}/>
+          <Route path="sellercurrentbids" element={<Sellercurrentbids />}/>
+          <Route path="Maintransporter" element={<Maintransporter />}/>
+          <Route path="Transporterprofile" element={<Transporterprofile />}/>
+          <Route path="Biddetails" element={<Biddetails />}/>
+          <Route path="Aboutus" element={<Aboutus />}/>
+
+
      </Route>
        </Routes>
-      </BrowserRouter> */}
-      <Calculatefeas></Calculatefeas>
+       <Footer/>
+      </BrowserRouter>
+      
+      {/* <Calculatefeas></Calculatefeas> */}
+
+      {/* <Aboutus></Aboutus> */}
       </>
   )
 }
