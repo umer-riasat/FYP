@@ -1,24 +1,9 @@
 import React from 'react'
-import './Mainbuyer.css'
-import { Link , Outlet } from 'react-router-dom';
+import "./Viewbuyerprofile.css"
+import { Link } from 'react-router-dom';
 
-export default function Mainbuyer () {
+export default function Viewbuyerprofile() {
   return (
-
-<div className='flexing'>
-    <div className='outerdash' >
-        <div className="dashboard">
-          <div className="option" >
-              <Link to="/Bidcreatebybuyer"> <button>  Create Bid </button></Link>
-          </div>
-          <div className="option">
-              <Link to="/Buyercurrentbids"> <button> Manage Bid </button></Link>
-          </div>
-          <div className="option">
-              <Link to="/Buyerprofile"> <button> Manage Profile </button></Link>
-          </div>
-      </div>
-    </div>
 
     <div className='viewbuyerprofile'>
       <header>
@@ -34,7 +19,7 @@ export default function Mainbuyer () {
     </header>
     <main>
         <div className='tablebox' >
-        {/* <section class="product-list">
+        <section class="product-list">
             <h2>Products Imported</h2>
             <table>
                 <tr>
@@ -48,7 +33,7 @@ export default function Mainbuyer () {
                     <td>1000$</td>
                 </tr>
             </table>
-        </section> */}
+        </section>
         <section class="buyer-stats">
             <h2>Buyer Stats</h2>
             <table>
@@ -64,7 +49,6 @@ export default function Mainbuyer () {
         </section>
         </div>
     </main>
-    </div>
     </div>
   )
 }

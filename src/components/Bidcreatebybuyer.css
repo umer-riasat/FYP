@@ -1,6 +1,7 @@
 .bidcreation {
     margin: 0 auto;
     padding: 0;
+    width: 70%;
   }
 
   .bidcreation .heading{
@@ -31,6 +32,12 @@
     gap: 15px;
   }
   
+  .bidcreation .bidForm .bidreq input[type="date"]{
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #0c2943;
+
+  }
  
   
   .bidcreation .bidForm .bidreq input[type="text"],
@@ -49,11 +56,13 @@
   
   /* Style the submit button */
   .bidcreation .bidForm .bidreq input[type="submit"] {
+    width: 50%;
+    margin: 0 auto;
     background-color: #0c2943;
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     font-size: 16px;
     cursor: pointer;
   }

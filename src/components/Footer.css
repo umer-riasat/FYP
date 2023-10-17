@@ -1,13 +1,15 @@
 footer {
     background: #0c2943;
-    margin-top: 60px;
+    margin-top: px;
   }
 
   footer .footer-sec {
     max-width: 1400px;
     margin: 0 auto;
     padding: 40px 20px;
+    justify-content: space-around;
   }
+  
   footer .footer-sec .left-icon-details .rightlook-logo{
     width: 100%;
     text-align: center;

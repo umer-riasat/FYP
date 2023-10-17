@@ -1,8 +1,27 @@
 import React from 'react'
 import './Login.css'
-import { Link } from 'react-router-dom'
+import { Link  } from 'react-router-dom'
+import  { useState } from 'react';
+
+
 
 export default function Login() {
+  
+    // useEffect(() => {
+    //     const loginSelect = document.getElementById('loginSelect');
+    //     const loginButton = document.getElementById('loginButton');
+    
+    //     // Add a click event handler to the button
+    //     loginButton.addEventListener('click', () => {
+    //       // Get the selected option's value
+    //       const selectedOption = loginSelect.options[loginSelect.selectedIndex];
+    //       const selectedValue = selectedOption.value;
+    
+    //       // Redirect to the selected URL
+    //       window.location.href = selectedValue;
+    //     });
+    //   }, []);
+
   return (
     <div className='mainlogin'>
         <div className="outerdiv">
@@ -15,12 +34,11 @@ export default function Login() {
                 </div>
                 <div className="passdiv ep">
                     <label htmlFor="" className="pass">
-                        
                     </label>
                     <input placeholder='Password' type="text" className="values" />
                 </div>
                 <div className="buton">
-                        <Link to="/Mainbuyer" >
+                        <Link to = "/Mainbuyer" >
                             <button>
                                 Login Buyer
                             </button>
@@ -37,6 +55,15 @@ export default function Login() {
                             </button>
                         </Link>
                 </div>
+                {/* <div className="select">
+                        <select>
+                            <option value="/Mainbuyer"><Link to = "/Mainbuyer" ></Link> Login Buyer</option>
+                            <option value="/Maintransporter">Login Transporter</option>
+                            <option value="/Mainseller">Login Seller</option>
+                        </select>
+                            <button>Go</button>
+                        </div> */}
+
                 <div className="footer">
                     <p className="foothead">
                         ------Don't have an Acount.------

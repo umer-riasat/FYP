@@ -4,6 +4,61 @@ body {
 }
 
 
+.flexing{
+    display: flex;
+    gap: 5%;
+
+}
+
+.outerdash{
+    background-color: #133554;
+    width: 302px;
+    min-height:800px;
+    border: 1px solid #133554;
+}
+
+.dashboard {
+    margin-top: 50px;
+    background-color: #133554;
+    padding: 20px;
+    border: 1px solid #133554;
+    /* border-radius: 5px; */
+    width: 300px;
+    min-height:800px;
+}
+
+
+
+.dashboard .option {
+    margin: 0 auto;
+    /* padding: 10px; */
+    /* border: 1px solid #133554; */
+    background-color: #133554;
+    /* border-radius: 5px; */
+    text-align: center;
+    cursor: pointer;
+}
+
+.dashboard .option a button{
+    background-color:#133554;
+    color:white;
+    border: 1px solid  #133554;
+    /* border-radius: 20px; */
+    width: 100%;
+    padding:8px ;
+    margin: 1px;
+}
+
+.dashboard .option a button:hover{
+    background-color:white;
+    color: #133554;
+    transition: ease-in-out .2s;
+}
+
+.transprofile {
+    width: 70%;
+}
+
 .transprofile header {
     background-color:  #0c2943;
     color: white;
@@ -26,6 +81,11 @@ body {
 .transprofile header .trans-info h6 {
     margin-top: 10px;
     margin-left: 80px;
+}
+
+.transprofile header .trans-info h6 input{
+    background-color:  #0c2943;
+    color: white;
 }
 
 .transprofile main {

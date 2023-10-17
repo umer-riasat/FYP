@@ -13,22 +13,22 @@ export default function Biddetails() {
             <th>ID</th>
             <th>Buyer Name</th>
             <th>Address</th>
-            <th>Items</th>
+            {/* <th>Items</th> */}
             <th>Quantity</th>
             <th>Price</th>
-            <th>Start</th>
-            <th>End</th>
+            {/* <th>Start</th> */}
+            {/* <th>End</th> */}
 
         </tr>
         <tr>
             <td>1</td>
             <td>Product A</td>
             <td>123 main</td>
-            <td>Item 1, Item 2</td>
+            {/* <td>Item 1, Item 2</td> */}
             <td>3</td>
             <td>$100</td>
-            <td>22-04-2023</td>
-            <td>22-04-2023</td>
+            {/* <td>22-04-2023</td> */}
+            {/* <td>22-04-2023</td> */}
         </tr>
     </table>
     </div>

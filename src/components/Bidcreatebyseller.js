@@ -1,8 +1,28 @@
 import React from 'react'
 import './Bidcreatebyseller.css'
+import { Link , Outlet } from 'react-router-dom';
 
 export default function Bidcreatebyseller () {
   return (
+
+    <div className='flexing'>
+  <div className='outerdash' >
+      <div className="dashboard">
+      <div className="option" >
+              <Link to="/Viewbidsseller"> <button>  View bids </button></Link>
+          </div>
+        <div className="option" >
+            <Link to="/Bidcreatebyseller"> <button>  Create Bid </button></Link>
+        </div>
+        <div className="option">
+            <Link to="/sellercurrentbids"> <button> Manage Bid </button></Link>
+        </div>
+        <div className="option">
+            <Link to="/sellerprofile"> <button> Manage Profile </button></Link>
+        </div>
+    </div>
+  </div>
+  
     <div className='bidcreations'>
         <h2 className="heading">
             Create Bid for Transporter
@@ -11,10 +31,10 @@ export default function Bidcreatebyseller () {
           <form className="bidForm" action="" >
             <div className="bidreq">
                 <label for="userId"> </label>
-                    <input type="text" className="userId require" name="userId" required placeholder='User ID' />
+                    {/* <input type="text" className="userId require" name="userId" required placeholder='User ID' />
 
                 <label for="bidId"></label>
-                    <input type="text" className="bidId require" name="bidId" required placeholder='Bid ID'/>
+                    <input type="text" className="bidId require" name="bidId" required placeholder='Bid ID'/> */}
 
                 <label for="location"></label>
                     <input type="text" className="location require" name="location" required placeholder='Location'/>
@@ -38,6 +58,7 @@ export default function Bidcreatebyseller () {
                 <input type="submit" value="Submit"/>
         </div>
     </form>
+    </div>
     </div>
   )
 }

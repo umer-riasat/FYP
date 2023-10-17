@@ -1,8 +1,25 @@
 import React from 'react'
-import "./Editbid.css"
+import "./Editbidbuyer.css"
+import { Link } from 'react-router-dom';
 
-export default function Editbid() {
+export default function Editbidbuyer() {
   return (
+
+    <div className='flexing'>
+    <div className='outerdash' >
+        <div className="dashboard">
+          <div className="option" >
+              <Link to="/Bidcreatebybuyer"> <button>  Create Bid </button></Link>
+          </div>
+          <div className="option">
+              <Link to="/Buyercurrentbids"> <button> Manage Bid </button></Link>
+          </div>
+          <div className="option">
+              <Link to="/Buyerprofile"> <button> Manage Profile </button></Link>
+          </div>
+      </div>
+    </div>
+    
     <div className="managebid">
     <h2 className="heading">
         Edit Bid
@@ -10,9 +27,14 @@ export default function Editbid() {
 
       <form className="bidForm" action="" >
         <div className="bidreq">
+            {/* <label for="Date"> Start Date </label>
+                 <input type="date" className="date require" name="userId" required placeholder='DATE' />
+
+            <label for="Date"> End Date </label>
+                <input type="date" className="date require" name="userId" required placeholder='DATE' />
 
             <label for="bidId">Bid Id</label>
-                <input type="text" className="bidId require" name="bidId" required placeholder='Bid ID'/>
+                <input type="text" className="bidId require" name="bidId" required placeholder='Bid ID'/> */}
 
             <label for="location">Location</label>
                 <input type="text" className="location require" name="location" required placeholder='Location'/>
@@ -34,6 +56,7 @@ export default function Editbid() {
 
     </div>
 </form>
+</div>
 </div>
   )
 }

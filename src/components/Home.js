@@ -17,14 +17,14 @@ export default function Home() {
           </h4>
         
         <div className="lowerdiv">
-          <h6 className="trust">
+            {/* <h6 className="trust">
             Trusted by
           </h6>
           <div className="trustimg">
-            <a href="/" className="logos">
+             <a href="/" className="logos">
               <img src="https://upload.wikimedia.org/wikipedia/en/e/e4/National_University_of_Computer_and_Emerging_Sciences_logo.png"  alt="" />
-            </a>
-          </div>
+            </a> 
+           </div>   */}
           </div>
           <div className="signup">
             <Link to="/Signupseller" className="signupbuton">

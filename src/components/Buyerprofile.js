@@ -1,20 +1,35 @@
 import React from 'react'
 import "./Buyerprofile.css"
+import { Link } from 'react-router-dom';
 
 export default function 
 () {
   return (
+<div className='flexing'>
+    <div className='outerdash' >
+        <div className="dashboard">
+          <div className="option" >
+              <Link to="/Bidcreatebybuyer"> <button>  Create Bid </button></Link>
+          </div>
+          <div className="option">
+              <Link to="/Buyercurrentbids"> <button> Manage Bid </button></Link>
+          </div>
+          <div className="option">
+              <Link to="/Buyerprofile"> <button> Manage Profile </button></Link>
+          </div>
+      </div>
+    </div>
+
     <div className='buyerprofile'>  
         <header>
         <div class="buyer-info">
-            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=
-            M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww&w=1000&q=80" alt=""/>
-            <h6>Buyer Name</h6>
-            <h6>Buyer Id</h6>
+            <img src="/profile.jpg" alt=""/>
+            <h6> <input placeholder='Edit name' /></h6>
+            <h6><input placeholder='Edit address' /></h6>
         </div>
     </header>
     <main>
-        <section class="product-list">
+        {/* <section class="product-list">
             <h2>Products Imported</h2>
             <form>
                 <label for="product-name">Product Name:</label>
@@ -27,7 +42,7 @@ export default function
                 <input type="number" id="product-price" name="product-price" required />
             </form>
             
-        </section>
+        </section> */}
         <section class="buyer-stats">
             <h2>Buyer Stats</h2>
             <form>
@@ -39,6 +54,7 @@ export default function
             </form>
         </section>
     </main>
+    </div>
     </div>
   )
 }

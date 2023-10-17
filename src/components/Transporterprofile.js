@@ -1,15 +1,32 @@
 import React from 'react'
 import './Transporterprofile.css'
+import { Link , Outlet } from 'react-router-dom';
 
 export default function Transporterprofile() {
   return (
+
+    <div className='flexing'>
+    <div className='outerdash' >
+        <div className="dashboard">
+        <div className="option" >
+              <Link to="/Transporterprofile"  > <button>  Profile </button></Link>
+          </div>
+          <div className="option" >
+              <Link to="/Viewbidstrans"  ><button> View bids </button></Link>
+          </div>
+          {/* <div className="option">
+              <Link to="/Accepttrans"  ><button> Accepted Bids </button></Link>
+          </div> */}
+      </div>
+    </div>
+
+
     <div className='transprofile'>
         <header>
         <div class="trans-info">
-            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=
-            M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww&w=1000&q=80" alt=""/>
-            <h6>Transporter Name</h6>
-            <h6>Transporter Address</h6>
+            <img src="profile.jpg" alt=""/>
+            <h6> <input placeholder='Edit name' /></h6>
+            <h6><input placeholder='Edit address' /></h6>
         </div>
     </header>
     <main>
@@ -29,6 +46,7 @@ export default function Transporterprofile() {
             </form>
         </section>
     </main>
+    </div>
     </div>
   )
 }

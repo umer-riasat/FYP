@@ -1,56 +1,189 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-body{
+body {
     margin: 0;
     padding: 0;
-    /* font-family: 'Roboto', sans-serif; */
 }
 
-.mainseller{
-    max-width: 1000px;
-    margin: 0 auto;
-    text-align: center;
-}
 
-.mainseller .welcome{
-    color: #0c2943;
-    margin-top: 5%;
-    text-align: center;
-}
-
-.mainseller .buyeroptions{
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: center;
-    border: 1px solid gray;
-    margin-top: 10%;
-    box-shadow: 7px 7px 7px rgb(30, 53, 69);
-    border-radius: 5px;
-}
-
-.mainseller .buyeroptions .bids{
-    text-align: center;
+.flexing{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    gap: 5%;
+
 }
 
-.mainseller .buyeroptions .bids li{
-    list-style: none;
-    margin: 4%;
+.outerdash{
+    background-color: #133554;
+    width: 302px;
+    min-height:800px;
+    border: 1px solid #133554;
 }
 
-.mainseller .buyeroptions .bids li a button{
-    background-color:#0c2943;
+.dashboard {
+    margin-top: 50px;
+    background-color: #133554;
+    padding: 20px;
+    border: 1px solid #133554;
+    /* border-radius: 5px; */
+    width: 300px;
+    min-height:800px;
+}
+
+
+
+.dashboard .option {
+    margin: 0 auto;
+    /* padding: 10px; */
+    /* border: 1px solid #133554; */
+    background-color: #133554;
+    /* border-radius: 5px; */
+    text-align: center;
+    cursor: pointer;
+}
+
+.dashboard .option a button{
+    background-color:#133554;
     color:white;
-    border: 1px solid  grey;
-    border-radius: 25px;
-    width: 250px;
+    border: 1px solid  #133554;
+    /* border-radius: 20px; */
+    width: 100%;
     padding:8px ;
+    margin: 1px;
 }
 
-.mainseller .buyeroptions .bids li a button:hover{
+.dashboard .option a button:hover{
     background-color:white;
-    color:#0c2943;
+    color: #133554;
     transition: ease-in-out .2s;
 }
+
+.viewsellerprofile{
+   width: 70%;
+}
+
+.viewsellerprofile header {
+    background-color:  #0c2943;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.viewsellerprofile header .seller-info{
+    display: flex;
+    text-align: left;
+    border-top: 2px solid #5a679f;
+    padding: 10px;
+}
+
+.viewsellerprofile header .seller-info .imgdiv{
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    padding-bottom: 0;
+
+}
+
+
+.viewsellerprofile header .seller-info img {
+    width: 100px;
+    border-radius: 50px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.viewsellerprofile header .seller-info .namediv{
+    margin-top: 50px;
+}
+
+.viewsellerprofile header .seller-info h6 {
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.viewsellerprofile main {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 5%;
+    width: 1300px;
+    /* border: 2px solid black; */
+    padding: 10px;
+}
+
+.viewsellerprofile main .tablebox{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+}
+
+.viewsellerprofile main .tablebox .product-list {
+    /* border: 2px solid black; */
+    width: 50%;
+    padding: 10px;
+}
+
+
+.viewsellerprofile main .tablebox .product-list h2 {
+    font-family: 'Mirza', serif;
+}
+
+.viewsellerprofile main .tablebox .product-list table {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 100%;
+    
+}
+
+.viewsellerprofile main .tablebox .product-list table th {
+    background-color: #0c2943;
+    color: white;
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+.viewsellerprofile main .tablebox .product-list table td{
+    background-color: rgb(206, 202, 202);
+    color: #0c2943;
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+
+
+
+/* Seller stats */
+.viewsellerprofile main .tablebox .seller-stats {
+    /* border: 2px solid black; */
+    width: 50%;
+    padding: 10px;
+}
+
+
+.viewsellerprofile main .tablebox .seller-stats h2 {
+    font-family: 'Mirza', serif;
+}
+
+.viewsellerprofile main .tablebox .seller-stats table{
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.viewsellerprofile main .tablebox .seller-stats table th{
+    background-color: #0c2943;
+    color: white;
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+.viewsellerprofile main .tablebox .seller-stats table td{
+    background-color: rgb(206, 202, 202);
+    color: #0c2943;
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+

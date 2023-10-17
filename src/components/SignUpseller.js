@@ -5,8 +5,21 @@ import './SignUpseller.css';
 export default function SignUpseller(props){
     return(
         <>
-    { <div className="maindiv">
+        
+        <div className='main'>
+        
+        <div className='mainimg'>
+           <a href="/" className="sideimg">
+              <img src="/loginimg2.webp"  alt="" />
+            </a>
+        </div>
+     <div className="maindiv">
         <form className="mainform">
+        <div className='heading'>
+            <h3>
+                SIGNUP
+            </h3>
+        </div>
             <div className="lb-box name">
                 <div className="f-name">
                     <label for="name">
@@ -54,7 +67,8 @@ export default function SignUpseller(props){
             </div>
 
         </form>
-    </div> }
+    </div> 
+    </div>
 
 </>
     );
