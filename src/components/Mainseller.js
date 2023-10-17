@@ -1,8 +1,11 @@
 import React from 'react'
 import './Mainseller.css'
 import { Link , Outlet } from 'react-router-dom';
+import { useUser } from "../useUser";
 
 export default function Mainbuyer () {
+
+    const { user } = useUser();
   return (
     <div className='flexing'>
     <div className='outerdash' >
@@ -32,8 +35,7 @@ export default function Mainbuyer () {
                 <img src="/profile.jpg" alt=""/>
             </div>
             <div className='namediv'>
-                <h6>seller Name</h6>
-                <h6>Address</h6>
+            <h6>Name : {user}</h6>
             </div>
         </div>
     </header>

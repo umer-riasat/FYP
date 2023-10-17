@@ -1,66 +1,139 @@
-import React from 'react'
-import './Bidcreatebybuyer.css'
-import { Link , Outlet } from 'react-router-dom';
+import React, { useState } from "react";
+import axios from "axios";
+import "./Bidcreatebybuyer.css";
+import { Link, Outlet } from "react-router-dom";
+import { BASE_URL } from "../constants";
 
-export default function Bidcreatebybuyer () {
+export default function Bidcreatebybuyer() {
+  const [formData, setFormData] = useState({
+    // role:""
+    location: "",
+    category: "Cotton",
+    price: "",
+    quantity: "",
+    description: "",
+  });
+  const [responseMessage, setResponseMessage] = useState("");
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await axios.post(`${BASE_URL}/api/createbid`, formData);
+
+      if (response.data.success) {
+        setResponseMessage("Bid submitted successfully!");
+      } else {
+        setResponseMessage("Bid submission failed. Please try again.");
+      }
+    } catch (error) {
+      setResponseMessage("An error occurred. Please try again later.");
+    }
+  };
+
   return (
-
-    <div className='flexing'>
-  <div className='outerdash' >
-      <div className="dashboard">
-      <div className="option" >
+    <div className="flexing">
+      <div className="outerdash">
+        <div className="dashboard">
+        <div className="option" >
             <Link to="/Mainbuyer"> <button>  Home </button></Link>
         </div>
-        <div className="option" >
-            <Link to="/Bidcreatebybuyer"> <button>  Create Bid </button></Link>
+          <div className="option">
+            <Link to="/Bidcreatebybuyer">
+              {" "}
+              <button> Create Bid </button>
+            </Link>
+          </div>
+          <div className="option">
+            <Link to="/Buyercurrentbids">
+              {" "}
+              <button> Current Bids </button>
+            </Link>
+          </div>
+          <div className="option">
+            <Link to="/Buyerprofile">
+              {" "}
+              <button> Manage Profile </button>
+            </Link>
+          </div>
         </div>
-        <div className="option">
-            <Link to="/Buyercurrentbids"> <button> Current Bids </button></Link>
-        </div>
-        <div className="option">
-            <Link to="/Buyerprofile"> <button> Manage Profile </button></Link>
-        </div>
+      </div>
+
+      <div className="bidcreation">
+        <h1 className="heading">Create Bid for Seller</h1>
+
+        <form className="bidForm" onSubmit={handleSubmit}>
+          <div className="bidreq">
+            <label htmlFor="location">Location</label>
+            <input
+              type="text"
+              className="location require"
+              name="location"
+              value={formData.location}
+              onChange={handleChange}
+              required
+              placeholder="Location"
+            />
+
+            <label htmlFor="category">Category</label>
+            <select
+              className="category require"
+              name="category"
+              value={formData.category}
+              onChange={handleChange}
+              required
+            >
+              <option value="Cotton">Cotton</option>
+              <option value="Yarn">Yarn</option>
+              <option value="Wheat">Wheat</option>
+            </select>
+
+            <label htmlFor="price">Price</label>
+            <input
+              type="number"
+              className="price require"
+              name="price"
+              value={formData.price}
+              onChange={handleChange}
+              required
+              placeholder="Price"
+            />
+
+            <label htmlFor="quantity">Quantity</label>
+            <input
+              type="number"
+              className="quantity require"
+              name="quantity"
+              value={formData.quantity}
+              onChange={handleChange}
+              required
+              placeholder="Quantity"
+            />
+
+            <label htmlFor="description">Description</label>
+            <textarea
+              className="description require"
+              name="description"
+              value={formData.description}
+              onChange={handleChange}
+              rows="4"
+              required
+              placeholder="Description"
+            ></textarea>
+
+            <input type="submit" value="Submit" />
+          </div>
+          <p>{responseMessage}</p>
+        </form>
+      </div>
     </div>
-  </div>
-    <div className='bidcreation'>
-        <h1 className="heading">
-            Create Bid for Seller
-        </h1>
-
-          <form className="bidForm" action="" >
-            <div className="bidreq">
-                {/* <label for="Date"> Start Date </label>
-                    <input type="date" className="date require" name="userId" required placeholder='DATE' />
-
-                <label for="Date"> End Date </label>
-                    <input type="date" className="date require" name="userId" required placeholder='DATE' />
-
-                <label for="bidId"></label>
-                    <input type="text" className="bidId require" name="bidId" required placeholder='Bid ID'/> */}
-
-                <label for="location"></label>
-                    <input type="text" className="location require" name="location" required placeholder='Locaton'/>
-
-                <label for="category"></label>
-                        <select className="category require" name="category" placeholder='Category' required >
-                                <option value="electronics">Cotton</option>
-                                <option value="clothing">Yarn</option>
-                                <option value="furniture">Wheat</option>
-                        </select>
-
-                <label for="price"></label>
-                    <input type="number" className="price require" name="price" required placeholder='Price'/>
-
-                <label for="quantity"></label>
-                    <input type="number" className="quantity require" name="quantity" required placeholder='Quantity'/>
-
-                <label for="description"></label>
-                    <textarea className="description require" name="description" rows="4" required placeholder='Description'></textarea>
-
-                <input type="submit" value="Submit"/>
-        </div>
-    </form>
-    </div>
-    </div>
-  )
+  );
 }

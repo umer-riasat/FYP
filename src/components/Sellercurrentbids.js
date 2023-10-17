@@ -1,12 +1,44 @@
-import React from 'react'
-import './Sellercurrentbids.css'
-import { Link } from 'react-router-dom'
+import React, { useState, useEffect } from "react";
+import "./Sellercurrentbids.css";
+import { Link } from "react-router-dom";
+import axios from "axios";
 
 export default function Sellercurrentbids() {
-  return (
+  const [currentBids, setCurrentBids] = useState([]);
 
-    <div className='flexing'>
-    <div className='outerdash' >
+  useEffect(() => {
+    // Fetch current bids from the server using Axios
+    axios
+      .get("your-api-endpoint-for-current-bids")
+      .then((response) => {
+        setCurrentBids(response.data);
+      })
+      .catch((error) => {
+        console.error("Error fetching current bids:", error);
+      });
+  }, []);
+
+  const selectBid = (bidId) => {
+    // Handle bid selection (e.g., navigate to a bid details page)
+    // You can implement the behavior you want here.
+  };
+
+  const handleDelete = (bidId) => {
+    // Implement Axios logic to delete the bid with the given bidId
+    axios
+      .delete(`your-api-endpoint-for-deleting-bid/${bidId}`)
+      .then((response) => {
+        // Handle success, such as removing the bid from the currentBids state
+        setCurrentBids(currentBids.filter((bid) => bid.id !== bidId));
+      })
+      .catch((error) => {
+        console.error("Error deleting bid:", error);
+      });
+  };
+
+  return (
+    <div className="flexing">
+      <div className='outerdash' >
         <div className="dashboard">
         <div className="option" >
               <Link to="/Mainseller"> <button>  Home </button></Link>
@@ -26,56 +58,48 @@ export default function Sellercurrentbids() {
       </div>
     </div>
 
-    <div className='sellercurrentbids'>
-        <div className='viewbids'>
-         <h1>Current Bids</h1>
-    </div>
-     <div className="tablediv">
-     <table>
-         <thead>
-             <tr>
-                 <th>Bid ID</th>
-                 <th>Location</th>
-                 <th>Category</th>
-                 <th>Price</th>
-                 <th></th>
-             </tr>
-         </thead>
-         <tbody>
-             <tr onclick="selectBid">
-                 <td>1</td>
-                 <td>123 Main St </td>
-                 <td>Cotton</td>
-                 <td>100$</td>
-                 <td>
-                    <div className="editbuton">
-                    {/* <Link to="/Editbidseller" >
-                        <button>
-                            Edit
-                        </button>
-                    </Link> */}
-                    <Link to="" >
-                        <button>
-                            Delete
-                        </button>
-                    </Link>
-                    <Link to="/Viewbidprices" >
-                        <button>
-                            Bidings
-                        </button>
-                    </Link>
+      <div className="sellercurrentbids">
+        <div className="viewbids">
+          <h1>Current Bids</h1>
+        </div>
+        <div className="tablediv">
+          <table>
+            <thead>
+              <tr>
+                <th>Location</th>
+                <th>Category</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Description</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              {currentBids.map((bid) => (
+                <tr key={bid.id}>
+                  <td>{bid.location}</td>
+                  <td>{bid.category}</td>
+                  <td>{bid.quantity}</td>
+                  <td>{bid.price}</td>
+                  <td>{bid.description}</td>
+                  <td>
+                    <div className="editbutton">
+                      {/* You can replace "#" with the actual route for editing the bid */}
+                      <Link to={`/Editbidbuyer/${bid.id}`}>
+                        <button>Edit</button>
+                      </Link>
+                      <button onClick={() => handleDelete(bid.id)}>Delete</button>
+                      <Link to={`/Viewbidpriceb/${bid.id}`}>
+                        <button>Bidings</button>
+                      </Link>
                     </div>
-                </td>
-             </tr>
-             {/* {bids.map((bid) => (
-            <tr key={bid.id} onClick={() => selectBid(bid)}>
-              <td>{bid.id}</td>
-              <td>{bid.buyerName}</td>
-              <td>{bid.buyerAddress}</td> */}
+                  </td>
+                </tr>
+              ))}
             </tbody>
-    </table>
+          </table>
+        </div>
+      </div>
     </div>
-    </div>
-    </div>
-  )
+  );
 }

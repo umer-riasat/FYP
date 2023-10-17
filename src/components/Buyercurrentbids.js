@@ -41,13 +41,16 @@ export default function Buyercurrentbids() {
       <div className="outerdash">
         <div className="dashboard">
           <div className="option">
+          <div className="option" >
+            <Link to="/Mainbuyer"> <button>  Home </button></Link>
+        </div>
             <Link to="/Bidcreatebybuyer">
               <button> Create Bid </button>
             </Link>
           </div>
           <div className="option">
             <Link to="/Buyercurrentbids">
-              <button> Manage Bid </button>
+              <button> Current bids </button>
             </Link>
           </div>
           <div className="option">

@@ -6,9 +6,6 @@ import axios from "axios";
 import { useUser } from "../useUser";
 
 
-
-
-
 export default function Login() {
   const navigate = useNavigate();
   const { setEmail } = useUser();
@@ -106,3 +103,5 @@ export default function Login() {
     </div>
   );
 }
+
+

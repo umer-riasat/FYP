@@ -1,8 +1,11 @@
 import React from 'react'
 import './Maintransporter.css'
 import { Link } from 'react-router-dom';
+import { useUser } from "../useUser";
 
 export default function Maintransporter() {
+
+    const { user } = useUser();
   return (
 
     <div className='flexing'>
@@ -31,8 +34,7 @@ export default function Maintransporter() {
                 <img src="/profile.jpg" alt=""/>
             </div>
             <div className='namediv'>
-                <h6>seller Name</h6>
-                <h6>Address</h6>
+            <h6>Name : {user}</h6>
             </div>
         </div>
     </header>
