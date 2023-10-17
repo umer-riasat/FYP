@@ -26,7 +26,7 @@ export default function Maintransporter() {
 
     <div className='viewtransprofile'>
       <header>
-        <div class="trans-info">
+        <div className="trans-info">
             <div className='imgdiv' >
                 <img src="/profile.jpg" alt=""/>
             </div>
@@ -53,7 +53,7 @@ export default function Maintransporter() {
                 </tr>
             </table>
         </section> */}
-        <section class="trans-stats">
+        <section className="trans-stats">
             <h2>Seller Stats</h2>
             <table>
                 <tr>

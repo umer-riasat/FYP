@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export default function Viewbuyerprofile() {
   return (
 
-    <div className='viewbuyerprofile'>
+    <div className='viewbuyerprofileview'>
       <header>
         <div class="buyer-info">
             <div className='imgdiv' >

@@ -4,26 +4,26 @@ body {
 }
 
 
-.viewbuyerprofile{
+.viewbuyerprofileview{
    margin: 0 auto;
     width: 80%;
 }
 
-.viewbuyerprofile header {
+.viewbuyerprofileview header {
     background-color:  #0c2943;
     color: white;
     text-align: center;
     padding: 20px;
 }
 
-.viewbuyerprofile header .buyer-info{
+.viewbuyerprofileview header .buyer-info{
     display: flex;
     text-align: left;
     border-top: 2px solid #5a679f;
     padding: 10px;
 }
 
-.viewbuyerprofile header .buyer-info .imgdiv{
+.viewbuyerprofileview header .buyer-info .imgdiv{
     margin-top: 30px;
     background-color: white;
     border-radius: 50%;
@@ -33,23 +33,23 @@ body {
 }
 
 
-.viewbuyerprofile header .buyer-info img {
+.viewbuyerprofileview header .buyer-info img {
     width: 100px;
     border-radius: 50px;
     height: 100px;
     object-fit: cover;
 }
 
-.viewbuyerprofile header .buyer-info .namediv{
+.viewbuyerprofileview header .buyer-info .namediv{
     margin-top: 50px;
 }
 
-.viewbuyerprofile header .buyer-info h6 {
+.viewbuyerprofileview header .buyer-info h6 {
     margin-top: 10px;
     margin-left: 30px;
 }
 
-.viewbuyerprofile main {
+.viewbuyerprofileview main {
     margin: 0 auto;
     text-align: center;
     margin-top: 5%;
@@ -58,32 +58,32 @@ body {
     padding: 10px;
 }
 
-.viewbuyerprofile main .tablebox{
+.viewbuyerprofileview main .tablebox{
     text-align: center;
     display: flex;
     justify-content: space-around;
     gap: 100px;
 }
 
-.viewbuyerprofile main .tablebox .product-list {
+.viewbuyerprofileview main .tablebox .product-list {
     /* border: 2px solid black; */
     width: 50%;
     padding: 10px;
 }
 
 
-.viewbuyerprofile main .tablebox .product-list h2 {
+.viewbuyerprofileview main .tablebox .product-list h2 {
     font-family: 'Mirza', serif;
 }
 
-.viewbuyerprofile main .tablebox .product-list table {
+.viewbuyerprofileview main .tablebox .product-list table {
     margin: 0 auto;
     margin-top: 50px;
     width: 100%;
     
 }
 
-.viewbuyerprofile main .tablebox .product-list table th {
+.viewbuyerprofileview main .tablebox .product-list table th {
     background-color: #0c2943;
     color: white;
     border: 1px solid #ccc;
@@ -91,7 +91,7 @@ body {
     text-align: center;
 }
 
-.viewbuyerprofile main .tablebox .product-list table td{
+.viewbuyerprofileview main .tablebox .product-list table td{
     background-color: rgb(206, 202, 202);
     color: #0c2943;
     border: 1px solid #ccc;
@@ -103,24 +103,24 @@ body {
 
 
 /* Seller stats */
-.viewbuyerprofile main .tablebox .buyer-stats {
+.viewbuyerprofileview main .tablebox .buyer-stats {
     /* border: 2px solid black; */
     width: 50%;
     padding: 10px;
 }
 
 
-.viewbuyerprofile main .tablebox .buyer-stats h2 {
+.viewbuyerprofileview main .tablebox .buyer-stats h2 {
     font-family: 'Mirza', serif;
 }
 
-.viewbuyerprofile main .tablebox .buyer-stats table{
+.viewbuyerprofileview main .tablebox .buyer-stats table{
     margin: 0 auto;
     margin-top: 50px;
     width: 100%;
 }
 
-.viewbuyerprofile main .tablebox .buyer-stats table th{
+.viewbuyerprofileview main .tablebox .buyer-stats table th{
     background-color: #0c2943;
     color: white;
     border: 1px solid #ccc;
@@ -128,7 +128,7 @@ body {
     text-align: center;
 }
 
-.viewbuyerprofile main .tablebox .buyer-stats table td{
+.viewbuyerprofileview main .tablebox .buyer-stats table td{
     background-color: rgb(206, 202, 202);
     color: #0c2943;
     border: 1px solid #ccc;

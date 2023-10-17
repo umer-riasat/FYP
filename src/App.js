@@ -29,19 +29,19 @@ import Viewbuyerprofile from './components/Viewbuyerprofile';
 import Editbidbuyer from './components/Editbidbuyer';
 import Editbidseller from './components/Editbidseller';
 import Viewbidstrans from './components/Viewbidstrans';
-import Chart from './components/Chart';
 // import Buyerdashboard from './components/Buyerdashboard';
+
+import { UserProvider } from "./useUser";
+
 
 function App() {
 
-  const showlink = true;
-  const hidelink = false;
-
   return (
     <>
+    <UserProvider>
     <BrowserRouter>
     <Routes>
-      <Route path = "/" element={<NavBar show = {true}/>}>
+      <Route path = "/" element={<NavBar />}>
       <Route index element={<Home />}/>
           <Route path="signUpSeller" element={<SignUpseller signas="Sign Up" />} />
           <Route path="signUpOption" element={<Signupoption />} />
@@ -76,9 +76,7 @@ function App() {
       </Routes>
       <Footer/>
       </BrowserRouter>
-
-      {/* <Chart></Chart> */}
-
+      </UserProvider>
       </>
   )
 }

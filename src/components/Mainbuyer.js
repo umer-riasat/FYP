@@ -1,9 +1,15 @@
 import React from 'react'
 import './Mainbuyer.css'
 import { Link , Outlet } from 'react-router-dom';
+import Chart from './Chart';
+import { useUser } from "../useUser";
+
 
 
 export default function Mainbuyer () {
+
+    const { user } = useUser();
+
   return (
 
 <div className='flexing'>
@@ -31,28 +37,15 @@ export default function Mainbuyer () {
                 <img src="/profile.jpg" alt=""/>
             </div>
             <div className='namediv'>
-                <h6>Buyer Name</h6>
-                <h6>Address</h6>
+                <h6>Name : {user}</h6>
             </div>
         </div>
     </header>
     <main>
         <div className='tablebox' >
-        {/* <section class="product-list">
-            <h2>Products Imported</h2>
-            <table>
-                <tr>
-                    <th>Product Name:</th>
-                    <th>Product Quantity:</th>
-                    <th>Product Price:</th>
-                </tr>
-                <tr>
-                    <td>Wheat</td>
-                    <td>10kg</td>
-                    <td>1000$</td>
-                </tr>
-            </table>
-        </section> */}
+        <section class="product-list">
+            <Chart></Chart>
+        </section>
         <section class="buyer-stats">
             <h2>Buyer Stats</h2>
             <table>
@@ -62,7 +55,7 @@ export default function Mainbuyer () {
                 </tr>
                 <tr>
                     <td>100</td>
-                    <td>34</td>
+                    <td>50</td>
                 </tr>
             </table>
         </section>

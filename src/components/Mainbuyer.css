@@ -111,13 +111,13 @@ body {
 .viewbuyerprofile main .tablebox{
     text-align: center;
     display: flex;
-    justify-content: space-around;
-    gap: 100px;
+    justify-content: center;
+    gap: 10px;
 }
 
 .viewbuyerprofile main .tablebox .product-list {
     /* border: 2px solid black; */
-    width: 50%;
+    width: 35%;
     padding: 10px;
 }
 
@@ -155,7 +155,7 @@ body {
 /* Seller stats */
 .viewbuyerprofile main .tablebox .buyer-stats {
     /* border: 2px solid black; */
-    width: 50%;
+    width: 35%;
     padding: 10px;
 }
 

@@ -61,9 +61,9 @@ export default function Footer() {
                         <h3>quick link</h3>
                         <li><Link to="/">home</Link></li>
                         <li><Link to="/Aboutus" >about</Link></li>
-                        <li><a href="#" >products</a></li>
+                        {/* <li><a href="#" >products</a></li>
                         <li><a href="#" >contact us</a></li>
-                        <li><a href="#" >become a buyer</a></li>
+                        <li><a href="#" >become a buyer</a></li> */}
                     </ul>
                 </div>
                 <hr/>

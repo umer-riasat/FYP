@@ -1,83 +1,108 @@
-import React from 'react'
-import './Login.css'
-import { Link  } from 'react-router-dom'
-import  { useState } from 'react';
+import React, { useState } from "react";
+import "./Login.css";
+import { Link, useNavigate } from "react-router-dom";
+import { BASE_URL } from '../constants';
+import axios from "axios";
+import { useUser } from "../useUser";
+
+
 
 
 
 export default function Login() {
-  
-    // useEffect(() => {
-    //     const loginSelect = document.getElementById('loginSelect');
-    //     const loginButton = document.getElementById('loginButton');
+  const navigate = useNavigate();
+  const { setEmail } = useUser();
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+    role: "buyer", // Default role
+  });
+
+  const [error, setError] = useState("");
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const config = {
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  };
+
+  const handleLogin = async (e) => {
+    e.preventDefault();
     
-    //     // Add a click event handler to the button
-    //     loginButton.addEventListener('click', () => {
-    //       // Get the selected option's value
-    //       const selectedOption = loginSelect.options[loginSelect.selectedIndex];
-    //       const selectedValue = selectedOption.value;
-    
-    //       // Redirect to the selected URL
-    //       window.location.href = selectedValue;
-    //     });
-    //   }, []);
+    try {
+      const response = await axios.post(`${BASE_URL}/api/login`, formData, config);
+
+      if (response.data.success) {
+        setEmail(formData.email);
+        navigate(`/Main${formData.role}`);
+      } else {
+        setError("Incorrect email or password. Please try again.");
+        setFormData({ ...formData, role: "" });
+      }
+    } catch (error) {
+      setError("An error occurred. Please try again later.");
+      setFormData({ ...formData, role: "" });
+    }
+  };
 
   return (
-    <div className='mainlogin'>
-        <div className="outerdiv">
-            <form action="" className="login">
-                <div className="emaildiv ep">
-                    <label htmlFor="" className="email">
-                        
-                    </label>
-                    <input placeholder='Email' type="text" className="values" />
-                </div>
-                <div className="passdiv ep">
-                    <label htmlFor="" className="pass">
-                    </label>
-                    <input placeholder='Password' type="text" className="values" />
-                </div>
-                <div className="buton">
-                        <Link to = "/Mainbuyer" >
-                            <button>
-                                Login Buyer
-                            </button>
-                        </Link>
-                        <Link to="/Maintransporter" >
-                            <button>
-                                Login Transporter
-                            </button>
-                        </Link>
-                    
-                        <Link to="/Mainseller" > 
-                            <button>
-                                Login seller
-                            </button>
-                        </Link>
-                </div>
-                {/* <div className="select">
-                        <select>
-                            <option value="/Mainbuyer"><Link to = "/Mainbuyer" ></Link> Login Buyer</option>
-                            <option value="/Maintransporter">Login Transporter</option>
-                            <option value="/Mainseller">Login Seller</option>
-                        </select>
-                            <button>Go</button>
-                        </div> */}
-
-                <div className="footer">
-                    <p className="foothead">
-                        ------Don't have an Acount.------
-                    </p>
-                    <div className="signbuton">
-                        <Link to="/Signupoption"> 
-                            <button >
-                                Sign Up
-                            </button>
-                        </Link>
-                    </div>
-                </div>
-            </form>
+    <div className="mainlogin">
+      <div className="outerdiv">
+        <h2>Login</h2>
+        {error && <p className="error-message">{error}</p>}
+        <form className="login">
+          <div className="emaildiv ep">
+            <input
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              placeholder="Email"
+              className="values"
+            />
+          </div>
+          <div className="passdiv ep">
+            <input
+              type="password"
+              name="password"
+              value={formData.password}
+              onChange={handleChange}
+              placeholder="Password"
+              className="values"
+            />
+          </div>
+          <div className="role-select">
+            <select
+              name="role"
+              value={formData.role}
+              onChange={handleChange}
+            >
+              <option value="buyer">Buyer</option>
+              <option value="transporter">Transporter</option>
+              <option value="seller">Seller</option>
+            </select>
+          </div>
+          <div className=" ">
+            <button onClick={handleLogin}>Login</button>
+          </div>
+        </form>
+        <div className="footer">
+          <p className="foothead">------Don't have an Account.------</p>
+          <div className="signbuton">
+            <Link to="/Signupoption">
+              <button>Sign Up</button>
+            </Link>
+          </div>
         </div>
+      </div>
     </div>
-  )
+  );
 }
