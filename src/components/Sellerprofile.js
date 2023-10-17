@@ -9,13 +9,16 @@ export default function
     <div className='outerdash' >
         <div className="dashboard">
         <div className="option" >
+              <Link to="/Mainseller"> <button>  Home </button></Link>
+          </div>
+        <div className="option" >
               <Link to="/Viewbidsseller"> <button>  View bids </button></Link>
           </div>
           <div className="option" >
               <Link to="/Bidcreatebyseller"> <button>  Create Bid </button></Link>
           </div>
           <div className="option">
-              <Link to="/Sellercurrentbids"> <button> Manage Bid </button></Link>
+              <Link to="/Sellercurrentbids"> <button> Current Bids </button></Link>
           </div>
           <div className="option">
               <Link to="/Sellerprofile"> <button> Manage Profile </button></Link>
@@ -28,6 +31,7 @@ export default function
         <header>
         <div class="seller-info">
             <img src="/profile.jpg" alt=""/>
+            <input type="file" id="file" accept="image/*" />
             <h6> <input placeholder='Edit name' /></h6>
             <h6><input placeholder='Edit address' /></h6>
         </div>

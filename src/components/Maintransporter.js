@@ -9,6 +9,9 @@ export default function Maintransporter() {
     <div className='outerdash' >
         <div className="dashboard">
         <div className="option" >
+              <Link to="/Maintransporter"  > <button> Home </button></Link>
+          </div>
+        <div className="option" >
               <Link to="/Transporterprofile"  > <button> Manage Profile </button></Link>
           </div>
           <div className="option" >

@@ -9,13 +9,16 @@ export default function Viewbidprices() {
     <div className='outerdash' >
         <div className="dashboard">
         <div className="option" >
+              <Link to="/Mainseller"> <button>  Home </button></Link>
+          </div>
+        <div className="option" >
               <Link to="/Viewbidsseller"> <button>  View bids </button></Link>
           </div>
           <div className="option" >
               <Link to="/Bidcreatebyseller"> <button>  Create Bid </button></Link>
           </div>
           <div className="option">
-              <Link to="/Sellercurrentbids"> <button> Manage Bid </button></Link>
+              <Link to="/Sellercurrentbids"> <button> Current Bids </button></Link>
           </div>
           <div className="option">
               <Link to="/Sellerprofile"> <button> Manage Profile </button></Link>

@@ -29,6 +29,7 @@ import Viewbuyerprofile from './components/Viewbuyerprofile';
 import Editbidbuyer from './components/Editbidbuyer';
 import Editbidseller from './components/Editbidseller';
 import Viewbidstrans from './components/Viewbidstrans';
+import Chart from './components/Chart';
 // import Buyerdashboard from './components/Buyerdashboard';
 
 function App() {
@@ -75,6 +76,8 @@ function App() {
       </Routes>
       <Footer/>
       </BrowserRouter>
+
+      {/* <Chart></Chart> */}
 
       </>
   )

@@ -8,11 +8,14 @@ export default function
 <div className='flexing'>
     <div className='outerdash' >
         <div className="dashboard">
+        <div className="option" >
+            <Link to="/Mainbuyer"> <button>  Home </button></Link>
+        </div>
           <div className="option" >
               <Link to="/Bidcreatebybuyer"> <button>  Create Bid </button></Link>
           </div>
           <div className="option">
-              <Link to="/Buyercurrentbids"> <button> Manage Bid </button></Link>
+              <Link to="/Buyercurrentbids"> <button> Current Bids </button></Link>
           </div>
           <div className="option">
               <Link to="/Buyerprofile"> <button> Manage Profile </button></Link>
@@ -24,6 +27,7 @@ export default function
         <header>
         <div class="buyer-info">
             <img src="/profile.jpg" alt=""/>
+            <input type="file" id="file" accept="image/*" />
             <h6> <input placeholder='Edit name' /></h6>
             <h6><input placeholder='Edit address' /></h6>
         </div>

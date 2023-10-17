@@ -80,6 +80,11 @@ body {
     margin-left: 80px;
 }
 
+.buyerprofile header .buyer-info input{
+    background-color:  #0c2943;
+    color: white;
+}
+
 .buyerprofile header .buyer-info h6 {
     margin-top: 10px;
     margin-left: 80px;
