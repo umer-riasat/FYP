@@ -1,0 +1,35 @@
+.dashboard {
+    background-color: #133554;
+    padding: 20px;
+    border: 1px solid #133554;
+    /* border-radius: 5px; */
+    width: 300px;
+    min-height:800px ;
+}
+
+.dashboard .option {
+    margin: 0 auto;
+    /* padding: 10px; */
+    /* border: 1px solid #133554; */
+    background-color: #133554;
+    /* border-radius: 5px; */
+    text-align: center;
+    cursor: pointer;
+}
+
+.dashboard .option a button{
+    background-color:#133554;
+    color:white;
+    border: 1px solid  white;
+    /* border-radius: 20px; */
+    width: 100%;
+    padding:8px ;
+    margin: 1px;
+}
+
+.dashboard .option a button:hover{
+    background-color:white;
+    color: #133554;
+    transition: ease-in-out .2s;
+}
+ 

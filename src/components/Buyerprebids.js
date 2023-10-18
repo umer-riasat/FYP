@@ -3,7 +3,7 @@ import "./Buyerprebids.css"
 
 export default function Buyerprebids() {
   return (
-    <div>
+    <div className='buyerprebids'>
     <div className='viewbids'>
          <h1>Bid Information</h1>
     </div>
@@ -17,7 +17,7 @@ export default function Buyerprebids() {
              </tr>
          </thead>
          <tbody>
-             <tr onclick="selectBid(this)">
+             <tr onclick="selectBid">
                  <td>1</td>
                  <td>John Doe</td>
                  <td>123 Main St</td>

@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.flexing{
+    display: flex;
+    gap: 5%;
+
+}
+
+.outerdash{
+    background-color: #133554;
+    width: 302px;
+    min-height:800px;
+    border: 1px solid #133554;
+}
+
+.dashboard {
+    margin-top: 50px;
+    background-color: #133554;
+    padding: 20px;
+    border: 1px solid #133554;
+    /* border-radius: 5px; */
+    width: 300px;
+    min-height:800px;
+}
+
+
+
+.dashboard .option {
+    margin: 0 auto;
+    /* padding: 10px; */
+    /* border: 1px solid #133554; */
+    background-color: #133554;
+    /* border-radius: 5px; */
+    text-align: center;
+    cursor: pointer;
+}
+
+.dashboard .option a button{
+    background-color:#133554;
+    color:white;
+    border: 1px solid  #133554;
+    /* border-radius: 20px; */
+    width: 100%;
+    padding:8px ;
+    margin: 1px;
+}
+
+.dashboard .option a button:hover{
+    background-color:white;
+    color: #133554;
+    transition: ease-in-out .2s;
+}
+
+.transprofile {
+    width: 70%;
+}
+
+.transprofile header {
+    background-color:  #0c2943;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.transprofile header .trans-info{
+    text-align: left;
+    border-top: 2px solid #5a679f;
+    padding: 10px;
+}
+
+.transprofile header .trans-info img {
+    max-width: 100px;
+    border-radius: 50%;
+    margin-left: 80px;
+}
+
+.transprofile header .trans-info h6 {
+    margin-top: 10px;
+    margin-left: 80px;
+}
+
+.transprofile header .trans-info h6 input{
+    background-color:  #0c2943;
+    color: white;
+}
+
+.transprofile main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.transprofile main .product-list {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.transprofile main .product-list h2 {
+    font-size: 20px;
+}
+
+.transprofile main .product-list form {
+    margin-top: 10px;
+}
+
+.transprofile main .product-list label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.transprofile main .product-list input[type="text"] {
+    width: 80%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Seller stats */
+.transprofile main .trans-stats {
+    flex: 1;
+}
+
+.transprofile main .trans-stats h2 {
+    font-size: 20px;
+}
+
+.transprofile main .trans-stats form {
+    margin-top: 10px;
+}
+
+.transprofile main .trans-stats label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.transprofile main .trans-stats input[type="text"] {
+    width: 80%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #f9f9f9;
+}

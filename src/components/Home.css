@@ -1,11 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+ 
+body{
+  background-color: #f1f1f1;
+}
 
 .homecontainer {
   margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .homecontainer .flexdiv {
-  color: #19951a;
+  color:#0c2943;
   font-family: "Ubuntu", sans-serif;
   display: flex;
   max-width: 1200px;
@@ -49,4 +54,24 @@
 
 .homecontainer .flexdiv .outerdiv .upperdiv .lowerdiv .trustimg .logos img{
   width: 100%;
+}
+
+.homecontainer .flexdiv .outerdiv .upperdiv .signup{
+  margin-top: 50px;
+}
+
+.homecontainer .flexdiv .outerdiv .upperdiv .signup button{
+  background-color:#0c2943;
+    color:white;
+    /* border: 1px solid  grey; */
+    border-radius: 30px;
+    width: 50%;
+    padding:10px ;
+}
+
+.homecontainer .flexdiv .outerdiv .upperdiv .signup button:hover{
+  background-color:white;
+  color:#0c2943;
+  transition: ease-in-out .2s;
+
 }
