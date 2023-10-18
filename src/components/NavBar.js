@@ -7,25 +7,23 @@ import axios from "axios";
 
 export default function NavBar() {
   const navigate = useNavigate();
-  const { user, setUser, email,setEmail } = useUser(); // Get user and email from UserContext
+  const { user, setUser, email,setEmail } = useUser(); // UserContext
 
   const handleLogout = () => {
-    // Implement logout logic here and set user and email to null
+ 
     setUser(null);
     setEmail(null);
     navigate("/Login");
   };
 
   useEffect(() => {
-    // Check if the user is logged in and fetch the username
+    
    
     axios.get(`${BASE_URL}/api/getusers`)
     .then((response) => {
-      const users = response.data.users; // Extract the 'users' array from the response
+      const users = response.data.users; 
   
-      const userEmailToFind =email; // Replace with the user's email you want to find
-  
-      // Use the Array.find method to search for a user in the 'users' array
+      const userEmailToFind =email; 
       const foundUser = users.find((user) => user.email === userEmailToFind);
   
       if (foundUser) {
@@ -60,7 +58,7 @@ export default function NavBar() {
                 <Link to="/Login">Login</Link>
               </li>
               <li>
-                <Link to="/Signupoption">Sign Up</Link>
+                <Link to="/Signupseller">Sign Up</Link>
               </li>
             </>
           )}

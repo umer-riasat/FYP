@@ -13,6 +13,7 @@ export default function Bidcreatebybuyer() {
     quantity: "",
     description: "",
   });
+  
   const [responseMessage, setResponseMessage] = useState("");
 
   const handleChange = (e) => {

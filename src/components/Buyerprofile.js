@@ -26,27 +26,13 @@ export default function
     <div className='buyerprofile'>  
         <header>
         <div class="buyer-info">
-            <img src="/profile.jpg" alt=""/>
-            <input type="file" id="file" accept="image/*" />
+            {/* <img src="/profile.jpg" alt=""/>
+            <input type="file" id="file" accept="image/*" /> */}
             <h6> <input placeholder='Edit name' /></h6>
             <h6><input placeholder='Edit address' /></h6>
         </div>
     </header>
     <main>
-        {/* <section class="product-list">
-            <h2>Products Imported</h2>
-            <form>
-                <label for="product-name">Product Name:</label>
-                <input type="text" id="product-name" name="product-name" required />
-
-                <label for="product-price">Product Quantity:</label>
-                <input type="number" id="product-price" name="product-price" required />
-
-                <label for="product-price">Product Price:</label>
-                <input type="number" id="product-price" name="product-price" required />
-            </form>
-            
-        </section> */}
         <section class="buyer-stats">
             <h2>Buyer Stats</h2>
             <form>

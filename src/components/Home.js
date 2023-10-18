@@ -38,10 +38,12 @@ export default function Home() {
 
       <div className="imgdiv">
           <a href="/" className="sideimg">
-              <img src="https://img.freepik.com/free-vector/import-export-infographic-hand-drawn_23-2149165167.jpg?w=2000" alt="" />
+              <img src="main-img.avif" alt="" />
           </a>
         </div>
       </div>
     </div>
   );
 }
+
+// https://img.freepik.com/free-vector/import-export-infographic-hand-drawn_23-2149165167.jpg?w=2000
