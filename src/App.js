@@ -19,7 +19,7 @@ import Managebidbuyer from './components/Managebidbuyer';
 function App() {
   return (
     <>
-    {/* <BrowserRouter>
+    <BrowserRouter>
     <Routes>
     <Route path = "/" element={<NavBar />} >
           <Route index element={<Home />} />
@@ -37,8 +37,8 @@ function App() {
           <Route path="Managebidbuyer" element={<Managebidbuyer />}/>
      </Route>
        </Routes>
-      </BrowserRouter> */}
-      <Calculatefeas></Calculatefeas>
+      </BrowserRouter>
+      {/* <Calculatefeas></Calculatefeas> */}
       </>
   )
 }
